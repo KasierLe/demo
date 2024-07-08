@@ -4,6 +4,8 @@
         "*.tcc": "c",
         "complex": "c",
         "numeric": "c",
-        "limits": "c"
+        "limits": "c",
+        "cctype": "c",
+        "ctype.h": "c"
     }
 }
