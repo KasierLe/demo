@@ -11,15 +11,15 @@
 
 int main(void)
 {
-	int fahr, celsius;
-	int lower = 0; /* lower limit of temperature scale */
-	int upper = 300; /* upper limit */
-	int step = 20; /* step size */
+	float fahr, celsius;
+	float lower = 0; /* lower limit of temperature scale */
+	float upper = 300; /* upper limit */
+	float step = 20; /* step size */
 
 	fahr = lower;
 	while (fahr <= upper) {
-		celsius = 5 * (fahr - 32) / 9;
-		printf("%d\t%d\n", fahr, celsius);
+		celsius = 5.0 * (fahr - 32) / 9.0;
+		printf("%3.0f\t%6.1f\n", fahr, celsius);
 		fahr += step;
 	}
 }
