@@ -5,6 +5,11 @@
         "complex": "c",
         "numeric": "c",
         "limits": "c",
+<<<<<<< HEAD
         "cstring": "c"
+=======
+        "cctype": "c",
+        "ctype.h": "c"
+>>>>>>> 36f3f83207988ae25cc986c8e4b7b872c41ecf76
     }
 }
