@@ -4,6 +4,7 @@
         "*.tcc": "c",
         "complex": "c",
         "numeric": "c",
-        "limits": "c"
+        "limits": "c",
+        "cstring": "c"
     }
 }
