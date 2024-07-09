@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/kasier/develop/glibc/glibc-2.39"
+                "/home/kasier/develop/local_glibc/glibc-2.35"
             ],
             "defines": [],
             "cStandard": "c17",
@@ -14,7 +14,7 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}/**",
-                    "/home/kasier/develop/glibc/glibc-2.39/"
+                    "/home/kasier/develop/local_glibc/glibc-2.35/"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
