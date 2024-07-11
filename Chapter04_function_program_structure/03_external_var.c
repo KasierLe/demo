@@ -119,9 +119,23 @@ int getop(char s[])
 char buf[BUFSIZE]; /* buffer for ungetch */
 int bufp = 0; /* next free position in buf */
 
+// int getch(void) /* get a (possibly pushedback) character */
+// {
+// 	return (bufp > 0) ? buf[bufp] : getchar();
+// }
+
 int getch(void) /* get a (possibly pushedback) character */
 {
-	return (bufp > 0) ? buf[bufp] : getchar();
+	int ch;
+
+	if (bufp > 0)
+		return buf[--bufp];
+
+	ch = getchar();
+	if (ch != EOF)
+		buf[bufp++] = ch;
+
+	return ch;
 }
 
 void ungetch(int c) /* push character back on input */
